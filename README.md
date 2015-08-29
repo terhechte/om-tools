@@ -1,5 +1,19 @@
 # om-tools
 
+# Private Fork to Handle Safari 9.0 Bug 22490514
+This bug breaks the camel-case function for inputs that are already proper camel case (such as className).
+This awful fork simply returns the original value. As I expect an Safari bug fix in due time, I'll just keep this awful solution on here in the meantime.
+
+To use:
+
+``` sh
+git clone ...
+cd om-tools
+lein install
+# make sure that the project.clj has [prismatic/om-tools "0.3.11-terhechte"] set
+```
+
+
 A ClojureScript library of general-purpose tools for building applications with
 [Om](https://github.com/swannodette/om) and
 [Facebook's React](http://facebook.github.io/react/).

@@ -26,6 +26,13 @@
   (not (or (symbol? form)
            (list? form))))
 
+#+cljs
+(defn camel-case
+  "Converts kebab-case to camelCase"
+  [s]
+  s)
+
+#+clj
 (defn camel-case
   "Converts kebab-case to camelCase"
   [s]
