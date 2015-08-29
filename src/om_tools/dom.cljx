@@ -29,6 +29,7 @@
 (defn camel-case
   "Converts kebab-case to camelCase"
   [s]
+  (.log js/console s)
   (str/replace s #"-(\w)" (comp str/upper-case second)))
 
 (defn- opt-key-case
